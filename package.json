@@ -1,0 +1,34 @@
+{
+  "name": "@nick-kelly/about-me",
+  "version": "1.0.0",
+  "repository": "https://github.com/NickKelly1/crm.git",
+  "author": "Nick Kelly <nick.kelly314@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "lerna:start": "lerna run --parallel --stream start",
+
+    "lerna:test": "lerna run test --stream",
+    "lerna:test:watch": "lerna run test:watch --stream",
+
+    "lerna:bootstrap": "lerna bootstrap",
+    "lerna:build:prod": "lerna run build:prod --stream",
+    "lerna:compile:dev": "lerna run compile:dev --stream",
+    "lerna:compile:dev:watch": "lerna run compile:dev:watch --stream",
+    "lerna:compile:prod": "lerna run compile:prod --stream",
+
+    "lerna:wipe": "lerna run wipe --stream",
+    "lerna:diff": "lerna diff",
+    "lerna:ls": "lerna ls",
+
+    "lerna:publish": "lerna publish",
+    "prepublishOnly": "yarn lerna:build:prod"
+  },
+  "devDependencies": {
+    "lerna": "^3.20.2",
+    "typescript": "^3.7.4"
+  }
+}

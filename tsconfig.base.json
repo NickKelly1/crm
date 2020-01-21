@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "composite": true,
+    "declaration": true,
+    "sourceMap": true,
+
+    "target": "ES2017",
+    "module": "commonjs",                     /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */
+    "jsx": "react",
+
+    "esModuleInterop": true,                  /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */
+    "allowSyntheticDefaultImports": true,
+
+    "strict": true,                           /* Enable all strict type-checking options. */
+
+    "forceConsistentCasingInFileNames": true,  /* Disallow inconsistently-cased references to the same file. */
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+
+    "allowJs": false,
+    "newLine": "lf",
+
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    // "*.test.ts",
+    // "*.spec.ts"
+  ]
+}
